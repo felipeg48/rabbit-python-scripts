@@ -1,0 +1,17 @@
+# RabbitMQ Python
+
+[source,shell]
+----
+pip install -r requirements.txt
+----
+
+[source,shell]
+----
+python producer.py --queue queue_east --msg 2 --txt Hola --sleep .5
+----
+
+[source,shell]
+----
+python consumer.py --queue queue_west1
+----
+
